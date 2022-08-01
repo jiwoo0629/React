@@ -48,7 +48,7 @@ class App extends Component {
       }
       _article = <ReadContent title={_title} desc={_desc}></ReadContent>
     } else if(this.state.mode === 'create') {
-      _article = <CreateContent onSubmit={function(_title, _desc) {
+      _article = <CreateContent onSubmit={function(_title, _desc) { 
         this.max_content_id += 1;
         /* 데이터를 추가하는 방법 1 : push (원본을 변경하는 방법, 성능 개선 시에 까다로워서 잘 사용하지 않음)
         this.state.contents.push(
